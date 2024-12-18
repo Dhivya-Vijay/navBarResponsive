@@ -1,0 +1,93 @@
+/* ::::CSS Sequence (6 Steps):::: */
+/* Step1: parentContainer */
+/* Step2: componentContainer */
+/* Step3: component */
+/* Step4: row */
+/* Step5: column */
+/* Step6: contentContainer */
+
+/* Step1: parentContainer */
+/* <header>,<main> & <footer> */
+/* code written in Default CSS */
+
+/* Step2: componentContainer */
+.navContainer {
+    background-color: #daf163;
+}
+
+/* Step3: component */
+.navBar {
+    /* background-color: #387532; */
+}
+
+/* Step4: row */
+.navBody {
+    /* background-color: #ffebcd; */
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* Step5: column */
+.logoImageBlock {
+    /* background-color: #0c82cc;   */
+}
+
+/* Step6: contentContainer */
+.logoImageBlock img {
+    /* background-color: #08d985;   */
+    height: 5.3rem;
+    width: auto;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+}
+
+.navBlock {
+    /* background-color: #d94a08;  */
+   }
+
+.navLinks {
+    /* background-color: #08d985; */
+    /* gap: 3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.navLinks li {
+    list-style-type: none;
+}
+
+.navLinks li a {
+    /* background-color: #8881e6; */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000000;
+}
+.navLinks li a span{
+    margin-right: 1rem;
+}
+
+.navButtonBlock {
+    /* background-color: rebeccapurple; */
+}
+
+.navButtonBlock button {
+    background-color: transparent;
+    border: 1px solid #f5a329;
+    border-radius: 10rem;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+    margin-left: 4rem;
+    letter-spacing: 1px;
+}
+
+.navBlock #iconToggle{
+    display: none;
+}
+.navBlock .hamburgerIcon{
+    display: none;
+}

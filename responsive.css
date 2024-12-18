@@ -1,0 +1,93 @@
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+@media (width <=576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .logoImageBlock img {
+        /* background-color: #08d985;   */
+        height: 7.5rem;
+        width: auto;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+    .navBlock{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .navLinks {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        display: none;
+    }
+    .navLinks li{
+        /* background-color: #ffffff; */
+        width:  100%;
+        display: flex;
+        flex-direction: column;
+        align-items:left;
+        /* border-bottom: 1px solid #000000; */
+    }
+    .navLinks li a{
+        padding: 0.75rem 0rem;
+        margin-left: 3rem;
+    }
+    .navLinks li:last-child{
+        /* border-bottom: none; */
+    }
+    .navBlock .hamburgerIcon{
+        display: block;
+        border: 1px solid #000000;
+        padding: 0.25rem 0.75rem 0.1rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        cursor: pointer;
+    }
+    #iconToggle:checked~.navLinks{
+        display: flex;
+    }
+    #iconToggle:checked~.navLinks li:hover{
+        background-color: #917c7c;
+        cursor: pointer;
+    }
+    #iconToggle:checked~.navLinks li:hover a{
+        color: orangered;
+        font-weight: 500;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+@media (width >=577px) and (width <=768px) {
+    /* write code here */
+}
+
+
+/* Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {
+    /* write code here */
+}
+
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+@media (width >=993px) and (width <=1200px) {
+    /* write code here */
+}
+
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+@media (width >=1200px) {
+    /* write code here */
+}
